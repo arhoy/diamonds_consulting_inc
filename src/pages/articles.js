@@ -8,7 +8,7 @@ import { H1 } from '../components/reusableStyles/typography/Typography';
 
 export const getArticles = graphql`
   query {
-    allArticles: allContentfulAlexQuasarArticles {
+    allArticles: allContentfulKakuraArticles {
       nodes {
         slug
         title

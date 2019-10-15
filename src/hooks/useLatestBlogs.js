@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 const useLatestBlogs = () => {
   const data = useStaticQuery(graphql`
     query lastestBlogs {
-      allBlogs: allContentfulBlogPost(
+      allBlogs: allContentfulKakuraArticles(
         limit: 5
         sort: { fields: publishDate, order: DESC }
       ) {

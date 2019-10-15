@@ -3,13 +3,13 @@ exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
   const { data } = await graphql(`
     {
-      blogArticles: allContentfulBlogPost {
+      blogArticles: allContentfulKakuraArticles {
         nodes {
           slug
         }
       }
 
-      allArticles: allContentfulAlexQuasarArticles {
+      allArticles: allContentfulKakuraArticles {
         nodes {
           slug
         }
