@@ -35,21 +35,15 @@ const about = () => {
             title="About Me"
             description="This is the about me section, Alex Quasar is a mere motral develop and Gatsby is a blazzingly fast static site generator"
           />
-          <H1>What is Aquasar.io</H1>
+          <H1>What is Diamonds</H1>
           <Div>
             <H2>About Me</H2>
             <p>
-              My name is Alex Quasar (Aquasar) and
-              <strong> I make websites.</strong> I started this website as a
-              place to document my learning and journey of web development. And
-              what a journey it has been! I am a full stack web developer (70%
-              frontend, 30% backend), former data analyst and inspiring blogger!
+     
+            Lorem ipsum <strong>Diamonds</strong> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <p>
-              Looking for a career change, my journey into the world of web
-              development has been anything but conventional. I hope to inspire
-              and provide a resource for others from all walks of life and
-              education backgrounds.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </Div>
 

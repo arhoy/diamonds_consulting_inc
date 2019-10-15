@@ -42,7 +42,7 @@ const Logo = styled.span`
   }
   & ${Navlink} {
     text-decoration: none !important;
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 `;
 
@@ -64,6 +64,7 @@ const NavContainer = styled.nav`
   }
 `;
 
+
 const BurgerIcon = styled(FaBeer)`
   cursor: pointer;
   font-size: 20px;
@@ -72,6 +73,8 @@ const BurgerIcon = styled(FaBeer)`
     margin: 0;
   }
 `;
+
+
 
 const Nav = () => {
   useEffect(() => {
@@ -82,7 +85,7 @@ const Nav = () => {
     <Header>
       <Logo>
         <Navlink to="/">
-          <i>A</i>quasar.io
+          Diamonds Consulting
         </Navlink>
       </Logo>
 

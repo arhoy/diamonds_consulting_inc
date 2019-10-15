@@ -126,10 +126,10 @@ const GitHubStyle = styled(FaGithub)`
 
 export default () => {
   return (
-    <Layout>
+    <Layout full = {true}>
       <SEO
-        title="Explore Gatsby"
-        description="MERN, Gatsby and other cool stuff"
+        title="Diamonds Consulting"
+        description="We do data consulting"
       />
       <DefaultPageContainer>
         <SectionTop>
