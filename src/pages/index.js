@@ -3,13 +3,11 @@ import styled from '@emotion/styled';
 
 import Layout from '../components/layouts/Layout';
 import SEO from '../hooks/SEO';
-import Insta from '../components/Insta';
 
 import profileImage from '../../images/alexquasar.png';
 import Articles from '../components/articles/Articles';
 import Navlink from '../components/Links/Navlink';
 import useLatestArticles from '../hooks/useLatestArticles';
-import useLatestBlogs from '../hooks/useLatestBlogs';
 
 import { ButtonStyle2 } from '../components/reusableStyles/buttons/Button';
 import { DefaultPageContainer } from '../components/layouts/PageContainers';
@@ -126,20 +124,16 @@ const GitHubStyle = styled(FaGithub)`
 
 export default () => {
   return (
-    <Layout full = {true}>
-      <SEO
-        title="Diamonds Consulting"
-        description="We do data consulting"
-      />
+    <Layout full={true}>
+      <SEO title="Diamonds Consulting" description="We do data consulting" />
       <DefaultPageContainer>
         <SectionTop>
           <SectionTopOne>
             <Title>
-              Hello I'm Alex
+              Diamonds Consulting Inc
               <Blurb>
-                I create websites and web apps using modern technologies like
-                React and Gatsby and then write about by learnings along the
-                way.
+                We are a data analytics and ai consulting firm specializing in
+                Python.
               </Blurb>
             </Title>
 
@@ -190,18 +184,9 @@ export default () => {
         </SectionMiddle>
 
         <SectionMiddle>
-          <H2>
-            Latest Blogs <NavlinkButton2 to="/blog"> View More</NavlinkButton2>
-          </H2>
-          <Articles articles={useLatestBlogs()} />
-        </SectionMiddle>
-        <SectionMiddle>
           <H2>Contact Me</H2>
           <SimpleNetlifyForm />
           <Hero />
-        </SectionMiddle>
-        <SectionMiddle>
-          <Insta />
         </SectionMiddle>
       </DefaultPageContainer>
     </Layout>

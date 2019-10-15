@@ -11,11 +11,11 @@ import Footer from './Footer';
 
 const theme = {
   colors: {
-    primary: 'rgb(92, 52, 145)',
-    primaryDark: 'rgb(73, 35, 122)',
-    primaryLight: 'rgb(148, 103, 206)',
-    primaryTransparent: 'rgba(92, 52, 145,0.2)',
-    secondary: 'rgb(24, 163, 201)',
+    primary: 'rgb(77, 131, 142)',
+    primaryDark: 'rgb(34, 109, 124)',
+    primaryLight: 'rgb(110, 182, 196)',
+    primaryTransparent: 'rgba(77, 131, 142,0.2)',
+    secondary: 'rgb(240, 150, 33)',
     lightgrey: 'rgb(240,240,240)',
     white: '#fff',
     black: '#1a1a1a',
@@ -79,7 +79,7 @@ const FullFooterLayout = styled.footer`
 
 const Layout = ({ children, full }) => {
   const white = '#fff';
-  const primaryColor = 'rgb(92, 52, 145)';
+  const primaryColor = 'rgb(77, 131, 142)';
 
   return (
     <>

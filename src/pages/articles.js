@@ -13,9 +13,7 @@ export const getArticles = graphql`
         slug
         title
         publishDate(formatString: "MMM Do YYYY")
-        author {
-          name
-        }
+
         heroImage {
           fluid {
             src

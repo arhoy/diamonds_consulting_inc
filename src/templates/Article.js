@@ -16,14 +16,12 @@ import { TagContainer, Tag } from '../components/reusableStyles/tags/Tag';
 // run template query
 export const query = graphql`
   query getFullArticle($slug: String!) {
-    article: contentfulAlexQuasarArticles(slug: { eq: $slug }) {
+    article: contentfulKakuraArticles(slug: { eq: $slug }) {
       title
       description {
         description
       }
-      author {
-        name
-      }
+
       publishDate(formatString: "MMM Do, Y")
       bodyRichText {
         json
@@ -99,7 +97,7 @@ const AricleTemplate = ({ data: { article } }) => {
     description: { description },
     bodyRichText: { json },
     publishDate,
-    author,
+
     heroImage: { fluid },
     tags,
   } = article;
@@ -140,7 +138,7 @@ const AricleTemplate = ({ data: { article } }) => {
             <ArticleHeaderContent>
               <H1>{title}</H1>
               <p>{publishDate}</p>
-              <p>{author ? author.name : 'Anonymous'}</p>
+
               <TagContainer>
                 {tags.map(tag => (
                   <Tag key={tag}>{tag}</Tag>

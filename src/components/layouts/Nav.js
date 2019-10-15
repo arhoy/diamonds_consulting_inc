@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 
 import styled from '@emotion/styled';
 import netlifyIdentity from 'netlify-identity-widget';
-import { FaBeer } from 'react-icons/fa';
+
 import links from '../../constants/navLinks';
 import DropDownMenu1 from '../Links/DropDownMenu1';
 import Navlink from '../Links/Navlink';
-
+import { FaCube } from 'react-icons/fa';
 const Header = styled.header`
   background: ${props => props.theme.colors.lightgrey};
   display: flex;
@@ -30,6 +30,11 @@ const Header = styled.header`
   }
 `;
 
+const FaCubeStyled = styled(FaCube)`
+  font-weight: bold;
+  font-size: 4rem;
+`;
+
 const Logo = styled.span`
   color: ${props => props.theme.colors.primary};
   @media (max-width: ${props => props.theme.screenSize.mobileL}) {
@@ -44,6 +49,10 @@ const Logo = styled.span`
     text-decoration: none !important;
     font-size: 2.2rem;
   }
+`;
+
+const LogoSpan = styled.span`
+  margin-left: 3px;
 `;
 
 const NavContainer = styled.nav`
@@ -64,18 +73,6 @@ const NavContainer = styled.nav`
   }
 `;
 
-
-const BurgerIcon = styled(FaBeer)`
-  cursor: pointer;
-  font-size: 20px;
-  color: ${props => props.theme.colors.primaryDark};
-  @media (min-width: ${props => props.theme.screenSize.mobileL}) {
-    margin: 0;
-  }
-`;
-
-
-
 const Nav = () => {
   useEffect(() => {
     netlifyIdentity.init();
@@ -85,7 +82,7 @@ const Nav = () => {
     <Header>
       <Logo>
         <Navlink to="/">
-          Diamonds Consulting
+          <FaCubeStyled /> <LogoSpan>Diamonds</LogoSpan>
         </Navlink>
       </Logo>
 
@@ -96,15 +93,6 @@ const Nav = () => {
           </Navlink>
         ))}
         <DropDownMenu1 />
-
-        <a
-          href="https://ko-fi.com/alexquasar"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Buy me a Kofi-Beer!"
-        >
-          <BurgerIcon />
-        </a>
       </NavContainer>
     </Header>
   );

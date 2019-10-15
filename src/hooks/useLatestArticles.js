@@ -11,9 +11,7 @@ const useLatestArticles = () => {
           slug
           title
           publishDate(formatString: "MMM Do YYYY")
-          author {
-            name
-          }
+
           heroImage {
             fluid {
               ...GatsbyContentfulFluid_withWebp

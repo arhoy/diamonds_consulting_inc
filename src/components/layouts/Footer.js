@@ -1,21 +1,20 @@
 import React from 'react';
 import socialIcons from '../../constants/socialIcons';
-import { graphql, useStaticQuery } from 'gatsby';
+
 import styled from '@emotion/styled';
-import Img from 'gatsby-image';
+import { FaCube } from 'react-icons/fa';
 
 const d = new Date().getFullYear();
 
 const FooterStyle = styled.div`
-  background: ${props => props.theme.colors.lightgrey};
+  background: ${props => props.theme.colors.primaryDark};
   margin: 0 auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+
   a {
     color: black;
     font-size: 3rem;
@@ -24,7 +23,7 @@ const FooterStyle = styled.div`
   }
 `;
 
-const StyledImage = styled(Img)`
+const StyledImage = styled.span`
   width: 25px;
   height: 25px;
   margin-left: 6px;
@@ -36,19 +35,15 @@ const Div = styled.div`
   align-items: center;
 `;
 
-const Footer = () => {
-  const { image } = useStaticQuery(graphql`
-    query {
-      image: file(relativePath: { eq: "canada-flag.png" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 30) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
+const Attribution = styled.p`
+  font-size: 1.2rem;
+`;
 
+const FooterBlurb = styled.p`
+  font-weight: bold;
+`;
+
+const Footer = () => {
   return (
     <FooterStyle>
       <ul>
@@ -65,9 +60,12 @@ const Footer = () => {
       </ul>
       <Div>
         YEG | Alberta |
-        <StyledImage alt="Made In Canada" fluid={image.sharp.fluid} />
+        <StyledImage>
+          <FaCube />
+        </StyledImage>
       </Div>
-      <p>Aquasar Blog {d} &copy; </p>
+      <FooterBlurb>Diamonds Consulting Inc {d} &copy; </FooterBlurb>
+      <Attribution>Created by Aquasar.io</Attribution>
     </FooterStyle>
   );
 };
