@@ -6,8 +6,8 @@ const URL = 'https://aquasar.io';
 
 module.exports = {
   siteMetadata: {
-    title: 'Aquasar - Web development, Gatsby and React Articles',
-    description: 'Documenting my web development journey with Gatsby and React',
+    title: 'Diamonds Consulting Inc',
+    description: 'Welcome to Diamonds Consutling Inc',
     author: 'Alex Quasar',
     twitterUsername: '@_aquasar',
     image: '/default.jpg',

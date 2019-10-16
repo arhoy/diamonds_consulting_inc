@@ -10,10 +10,12 @@ import {
   Container800,
   Section,
 } from '../components/reusableStyles/sections/Sections';
+import SEO from '../hooks/SEO';
 
 const contact = () => {
   return (
     <Layout>
+      <SEO title="Contact Diamonds Consulting" />
       <Section>
         <Container800>
           <H1>Contact Page</H1>

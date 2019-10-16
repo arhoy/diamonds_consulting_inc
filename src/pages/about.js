@@ -36,8 +36,8 @@ const about = () => {
     <Layout>
       <AboutStyled>
         <SEO
-          title="About Me"
-          description="This is the about me section, Alex Quasar is a mere motral develop and Gatsby is a blazzingly fast static site generator"
+          title="About Diamonds Consulting"
+          description="About Diamonds Consulting"
         />
 
         <Section>

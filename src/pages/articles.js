@@ -32,7 +32,7 @@ const articles = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Alex Quasar Articles on Gatsby and Full Stack React"
+        title="Diamonds Articles on data and business intelligence"
         description="Please see all the articles below, articles on Full Stack React and Gatsby and more"
       />
       <DefaultPageContainer>
