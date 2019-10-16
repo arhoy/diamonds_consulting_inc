@@ -24,9 +24,11 @@ const FooterStyle = styled.div`
 `;
 
 const StyledImage = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25px;
   height: 25px;
-  margin-left: 6px;
 `;
 
 const Div = styled.div`
@@ -59,7 +61,7 @@ const Footer = () => {
         ))}
       </ul>
       <Div>
-        YEG | Alberta |
+        Edmonton | Alberta |
         <StyledImage>
           <FaCube />
         </StyledImage>

@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import styled from '@emotion/styled';
-import netlifyIdentity from 'netlify-identity-widget';
 
 import links from '../../constants/navLinks';
 import DropDownMenu1 from '../Links/DropDownMenu1';
@@ -14,8 +13,8 @@ const Header = styled.header`
   justify-content: space-around;
   align-items: center;
   padding: 2rem 2.5rem;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
+
+  border-bottom: 1rem solid ${props => props.theme.colors.primary};
 
   a {
     display: flex;
@@ -47,7 +46,7 @@ const Logo = styled.span`
   }
   & ${Navlink} {
     text-decoration: none !important;
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
 `;
 
@@ -59,7 +58,7 @@ const NavContainer = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  z-index: 100;
   &.hideNav {
     display: none;
   }
@@ -74,10 +73,6 @@ const NavContainer = styled.nav`
 `;
 
 const Nav = () => {
-  useEffect(() => {
-    netlifyIdentity.init();
-  }, []);
-
   return (
     <Header>
       <Logo>

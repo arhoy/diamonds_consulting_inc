@@ -4,56 +4,66 @@ import styled from '@emotion/styled';
 import NoStyleLink from '../Links/NoStyleLink';
 import Image from 'gatsby-image';
 
-const Div = styled.div`
-  margin: 2rem 0rem;
-  max-width: 100rem;
-  margin: 1rem auto;
-  & h2 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  & p {
-    padding: 1rem;
-  }
-  &:hover {
-    cursor: pointer;
-    background: ${props => props.theme.colors.lightgrey};
-    border-top-right-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-  }
-  & .author {
-    font-size: 1.5rem;
-  }
-`;
-
 const StyledLink = styled(NoStyleLink)`
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-column-gap: 3rem;
+
+  justify-content: flex-end;
+  align-items: center;
+  margin: 4rem 0;
+  flex-wrap: nowrap;
+  @media (max-width: ${props => props.theme.screenSize.mobileL}) {
+    grid-template-columns: 1fr;
+  }
+
   align-items: center;
   justify-items: center;
-  padding: 1rem 1rem;
 `;
 
-const ImageContainer = styled(Image)`
-  min-width: 6rem;
-  min-height: 6rem;
-  margin-right: 1rem;
-  border-radius: 50%;
-  background-size: cover;
+const ContentContainer = styled.div`
+  height: 100%;
+`;
+
+const StyledImage = styled(Image)`
+  border-radius: 1rem;
+  max-width: 100%;
+  max-height: 100%;
 `;
 
 const Title = styled.h2`
+  color: ${props => props.theme.colors.primaryDark};
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+`;
+
+const P = styled.p`
+  margin-bottom: 1rem;
+`;
+
+const Date = styled.p`
+  font-style: italic;
+  font-size: 1.3rem;
+  color: ${props => props.theme.colors.darkgrey};
   display: flex;
-  justify-self: flex-start;
 `;
 
 const Article = ({ article }) => {
+  console.log(article);
   return (
-    <Div>
-      <StyledLink to={`articles/${article.slug}`}>
-        <ImageContainer fluid={article.heroImage.fluid} alt={article.title} />
+    <StyledLink to={`articles/${article.slug}`}>
+      <StyledImage
+        style={{ height: '100%', width: '100%', objectFit: 'contain' }}
+        fluid={article.heroImage.fluid}
+        alt={article.title}
+      />
+      <ContentContainer>
         <Title>{article.title}</Title>
-      </StyledLink>
-    </Div>
+        <P>{article.description.description}</P>
+        <Date> {article.publishDate}</Date>
+      </ContentContainer>
+    </StyledLink>
   );
 };
 

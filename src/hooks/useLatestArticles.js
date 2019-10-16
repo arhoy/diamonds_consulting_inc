@@ -4,12 +4,14 @@ const useLatestArticles = () => {
   const data = useStaticQuery(graphql`
     query lastestArticles {
       allArticles: allContentfulKakuraArticles(
-        limit: 5
         sort: { fields: publishDate, order: DESC }
       ) {
         nodes {
           slug
           title
+          description {
+            description
+          }
           publishDate(formatString: "MMM Do YYYY")
 
           heroImage {

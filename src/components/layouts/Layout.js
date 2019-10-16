@@ -60,12 +60,10 @@ const FullNavLayout = styled.header`
 `;
 
 const Main = styled.main`
-  margin-top: 3rem;
   grid-column: center-start/center-end;
 `;
 
 const MainFull = styled.main`
-  margin-top: 3rem;
   grid-column: full-start/full-end;
 `;
 
@@ -135,7 +133,7 @@ Layout.propTypes = {
   full: PropTypes.bool,
 };
 Layout.defaultProps = {
-  full: false,
+  full: true,
 };
 
 export default Layout;
