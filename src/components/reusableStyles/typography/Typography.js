@@ -3,6 +3,9 @@ import styled from '@emotion/styled';
 const H1 = styled.h1`
   font-size: 4rem;
   color: ${props => props.theme.colors.black};
+  @media (max-width: ${props => props.theme.screenSize.mobileL}) {
+    font-size: 3.2rem;
+  }
 `;
 
 const H2 = styled.h2`

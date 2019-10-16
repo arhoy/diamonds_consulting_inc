@@ -13,7 +13,7 @@ const StyledLink = styled(NoStyleLink)`
 
   justify-content: flex-end;
   align-items: center;
-  margin: 4rem 0;
+
   flex-wrap: nowrap;
   @media (max-width: ${props => props.theme.screenSize.mobileL}) {
     grid-template-columns: 1fr;
@@ -52,7 +52,6 @@ const Date = styled.p`
 `;
 
 const Article = ({ article }) => {
-  console.log(article);
   return (
     <StyledLink to={`articles/${article.slug}`}>
       <StyledImage

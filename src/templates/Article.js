@@ -44,8 +44,8 @@ const AritlceHeader = styled.div`
 `;
 
 const ArticleHeaderImage = styled(Image)`
-  width: 15rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
   margin-right: 1rem;
   justify-self: center;
   align-self: center;
@@ -64,6 +64,7 @@ const ArticleHeaderContent = styled.div`
 const ArticleContainer = styled.article`
   max-width: 75rem;
   margin: 0 auto;
+  padding: 6rem 0;
   & li {
     margin-left: 4rem;
   }

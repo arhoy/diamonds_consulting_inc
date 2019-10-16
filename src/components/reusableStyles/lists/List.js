@@ -16,10 +16,15 @@ const StyledA = styled(A)`
   }
 `;
 
-const ListInline = ({ urls }) =>
+const ListInline = ({ urls, fontSize }) =>
   urls.map(url => (
     <StyledInlineLi key={url.url}>
-      <StyledA rel="noopener noreferrer" href={url.url} target="_blank">
+      <StyledA
+        style={{ fontSize: `${fontSize}` }}
+        rel="noopener noreferrer"
+        href={url.url}
+        target="_blank"
+      >
         {url.title}
       </StyledA>
     </StyledInlineLi>

@@ -1,21 +1,21 @@
 export default [
   {
     url: 'https://www.cravejs.com',
-    title: 'Crave JS',
+    title: 'Google',
   },
   {
     url: 'https://ventura-gatsby-site-101.netlify.com',
-    title: 'Ventura',
+    title: 'Microsoft',
     description: '',
   },
   {
     url: 'https://dash-intel.com/',
-    title: 'Dash-Intel',
+    title: 'Uber',
     description: '',
   },
   {
     url: 'https://butchbarber.netlify.com',
-    title: 'Butch Barber',
+    title: 'Netflix',
     description: '',
   },
 ];

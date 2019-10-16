@@ -15,9 +15,10 @@ import Banner from '../components/reusableStyles/banner/Banner';
 
 import { H2 } from '../components/reusableStyles/typography/Typography';
 import SimpleNetlifyForm from '../components/forms/SimpleNetlifyForm';
+import Hero from '../components/heros/Hero';
 
 const CustomSectionGrey = styled(SectionGrey)`
-  padding-top: 0.5rem;
+  padding-top: 4rem;
 `;
 
 export const query = graphql`
@@ -33,7 +34,6 @@ export const query = graphql`
 `;
 
 export default ({ data }) => {
-  console.log('articles are ', useLatestArticles());
   return (
     <Layout full={true}>
       <SEO title="Diamonds Consulting" description="We do data consulting" />
@@ -62,6 +62,7 @@ export default ({ data }) => {
           <SimpleNetlifyForm />
         </Container800>
       </Section>
+      <Hero />
     </Layout>
   );
 };

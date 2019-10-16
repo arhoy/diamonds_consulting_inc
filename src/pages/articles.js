@@ -5,6 +5,7 @@ import SEO from '../hooks/SEO';
 import Articles from '../components/articles/Articles';
 import { DefaultPageContainer } from '../components/layouts/PageContainers';
 import { H1 } from '../components/reusableStyles/typography/Typography';
+import { MarginT6V } from '../components/reusableStyles/modular/modularStyles';
 
 export const getArticles = graphql`
   query {
@@ -35,6 +36,7 @@ const articles = ({ data }) => {
         description="Please see all the articles below, articles on Full Stack React and Gatsby and more"
       />
       <DefaultPageContainer>
+        <MarginT6V />
         <H1>Articles</H1>
         <Articles articles={data.allArticles.nodes} />
       </DefaultPageContainer>

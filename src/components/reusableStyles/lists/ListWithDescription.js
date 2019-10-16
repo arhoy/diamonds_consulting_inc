@@ -12,10 +12,10 @@ const StyledA = styled(A)`
   }
 `;
 
-const ListVertical = ({ items }) => (
+const ListVertical = ({ items, margin }) => (
   <Ul>
     {items.map((item, i) => (
-      <Li key={i}>
+      <Li key={i} style={{ margin: `${margin}` }}>
         <Span> {item.title} </Span>
         {item.urls.map(url => (
           <StyledA rel="noopener noreferrer" href={url.url} target="_blank">
