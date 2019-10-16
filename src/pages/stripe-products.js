@@ -1,20 +1,23 @@
-// import React from 'react';
-// import Layout from '../components/layouts/Layout';
-// import Skus from '../components/stripe/Skus';
-// import { DefaultPageContainer } from '../components/layouts/PageContainers';
-// import { H1 } from '../components/reusableStyles/typography/Typography';
+import React from 'react';
+import Layout from '../components/layouts/Layout';
 
-// const StripeProducts = () => {
-//   return (
-//     <Layout>
-//       <DefaultPageContainer>
-//         <H1>LegoCommerce </H1>
-//         <p> Powered by Stripe</p>
+import styled from '@emotion/styled';
 
-//         <Skus />
-//       </DefaultPageContainer>
-//     </Layout>
-//   );
-// };
+const Container = styled.div`
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+`;
 
-// export default StripeProducts;
+const StripeProducts = () => {
+  return (
+    <Layout>
+      <Container>
+        <h1> Sorry Page not found </h1>
+      </Container>
+    </Layout>
+  );
+};
+
+export default StripeProducts;
