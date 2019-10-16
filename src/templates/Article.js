@@ -16,12 +16,9 @@ import { TagContainer, Tag } from '../components/reusableStyles/tags/Tag';
 // run template query
 export const query = graphql`
   query getFullArticle($slug: String!) {
-    article: contentfulKakuraArticles(slug: { eq: $slug }) {
+    article: contentfulDiamondArticles(slug: { eq: $slug }) {
       title
-      description {
-        description
-      }
-
+      description
       publishDate(formatString: "MMM Do, Y")
       bodyRichText {
         json

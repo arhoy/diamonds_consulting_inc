@@ -5,14 +5,9 @@ const menuLinks1 = [
     text: 'Articles',
   },
   {
-    path: '/pricing',
-    text: 'Pricing',
+    path: '/about',
+    text: 'About',
   },
-  {
-    path: '/stripe-products',
-    text: 'Products',
-  },
-
   {
     path: '/contact',
     text: 'Contact',

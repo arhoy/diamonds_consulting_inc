@@ -8,12 +8,14 @@ import { H1 } from '../components/reusableStyles/typography/Typography';
 
 export const getArticles = graphql`
   query {
-    allArticles: allContentfulKakuraArticles {
+    allArticles: allContentfulDiamondArticles(
+      filter: { node_locale: { eq: "en-US" } }
+    ) {
       nodes {
         slug
         title
         publishDate(formatString: "MMM Do YYYY")
-
+        description
         heroImage {
           fluid {
             src

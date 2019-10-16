@@ -8,6 +8,8 @@ const StyledLink = styled(NoStyleLink)`
   display: grid;
   grid-template-columns: 2fr 6fr;
   grid-column-gap: 3rem;
+  padding: 4rem 0;
+  border-bottom: 1px solid ${props => props.theme.colors.black};
 
   justify-content: flex-end;
   align-items: center;
@@ -60,7 +62,7 @@ const Article = ({ article }) => {
       />
       <ContentContainer>
         <Title>{article.title}</Title>
-        <P>{article.description.description}</P>
+        <P>{article.description}</P>
         <Date> {article.publishDate}</Date>
       </ContentContainer>
     </StyledLink>
