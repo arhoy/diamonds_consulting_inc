@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPhone } from 'react-icons/fa';
 
 import styled from '@emotion/styled';
 
@@ -22,7 +23,7 @@ const Header = styled.header`
     align-items: center;
   }
   @media (max-width: ${props => props.theme.screenSize.mobileL}) {
-    height: 10rem;
+    height: 12rem;
     justify-content: center;
     align-items: flex-start;
     padding: 0;
@@ -36,6 +37,7 @@ const FaCubeStyled = styled(FaCube)`
 
 const Logo = styled.span`
   color: ${props => props.theme.colors.primary};
+  line-height: 1.8rem;
   @media (max-width: ${props => props.theme.screenSize.mobileL}) {
     margin-top: 1.2rem;
   }
@@ -54,6 +56,16 @@ const LogoSpan = styled.span`
   margin-left: 3px;
 `;
 
+const LogoBottom = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const LogoPhone = styled.span`
+  margin-right: 3px;
+`;
+
 const NavContainer = styled.nav`
   display: flex;
   justify-content: center;
@@ -64,7 +76,7 @@ const NavContainer = styled.nav`
   }
   @media (max-width: ${props => props.theme.screenSize.mobileL}) {
     flex-direction: row;
-    margin-top: 5rem;
+    margin-top: 7rem;
     position: absolute;
   }
   &.hideMe {
@@ -79,6 +91,10 @@ const Nav = () => {
         <Navlink to="/">
           <FaCubeStyled /> <LogoSpan>Diamonds</LogoSpan>
         </Navlink>
+        <LogoBottom>
+          <LogoPhone>587-723-082</LogoPhone>
+          <FaPhone />
+        </LogoBottom>
       </Logo>
 
       <NavContainer>

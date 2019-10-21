@@ -29,9 +29,9 @@ const StyledSpan = styled.span`
 // };
 
 const ListInline = ({ urls, fontSize }) =>
-  urls.map(url => {
+  urls.map((url, i) => {
     return (
-      <StyledInlineLi key={url.url}>
+      <StyledInlineLi key={i}>
         {url.noLink ? (
           <StyledSpan style={{ fontSize: fontSize }}>{url.title}</StyledSpan>
         ) : (

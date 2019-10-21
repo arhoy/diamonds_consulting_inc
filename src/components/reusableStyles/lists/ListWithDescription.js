@@ -26,13 +26,13 @@ const ListVertical = ({ items, margin }) => (
     {items.map((item, i) => (
       <Li key={i} style={{ margin: `${margin}` }}>
         <Span> {item.title} </Span>
-        {item.urls.map(url => {
+        {item.urls.map((url, i) => {
           if (url.noLink) {
-            return <StyledSpan>{url.urlTitle}</StyledSpan>;
+            return <StyledSpan key={i}>{url.urlTitle}</StyledSpan>;
           } else {
             return (
               <StyledA
-                key={url.url}
+                key={i}
                 rel="noopener noreferrer"
                 href={url.url}
                 target="_blank"

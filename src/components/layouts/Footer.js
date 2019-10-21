@@ -1,4 +1,5 @@
 import React from 'react';
+
 import socialIcons from '../../constants/socialIcons';
 
 import styled from '@emotion/styled';
@@ -66,6 +67,7 @@ const Footer = () => {
           <FaCube />
         </StyledImage>
       </Div>
+      tel: 587-723-082
       <FooterBlurb>Diamonds Consulting Inc {d} &copy; </FooterBlurb>
       <Attribution>Created by Aquasar.io</Attribution>
     </FooterStyle>
