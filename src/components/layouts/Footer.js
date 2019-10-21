@@ -15,13 +15,13 @@ const FooterStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
 
-  a {
-    color: black;
-    font-size: 3rem;
-    margin: 1rem;
-    padding: 1rem;
-  }
+const SocialIcon = styled.a`
+  color: ${props => props.theme.colors.black};
+  font-size: 3rem;
+  margin: 1rem;
+  padding: 1rem;
 `;
 
 const StyledImage = styled.span`
@@ -38,6 +38,11 @@ const Div = styled.div`
   align-items: center;
 `;
 
+const A = styled.a`
+  font-size: 1.2rem;
+  color: ${props => props.theme.colors.black};
+  text-decoration: none;
+`;
 const Attribution = styled.p`
   font-size: 1.2rem;
 `;
@@ -51,14 +56,14 @@ const Footer = () => {
     <FooterStyle>
       <ul>
         {socialIcons.map(icon => (
-          <a
+          <SocialIcon
             key={icon.url}
             href={icon.url}
             target="_blank"
             rel="noopener noreferrer"
           >
             {icon.icon}
-          </a>
+          </SocialIcon>
         ))}
       </ul>
       <Div>
@@ -67,9 +72,14 @@ const Footer = () => {
           <FaCube />
         </StyledImage>
       </Div>
-      tel: 587-723-082
+      tel: 587-723-0825
       <FooterBlurb>Diamonds Consulting Inc {d} &copy; </FooterBlurb>
-      <Attribution>Created by Aquasar.io</Attribution>
+      <Attribution>
+        Created by{' '}
+        <A target="_blank" rel="noopener noreferrer" href="https://aquasar.io/">
+          Aquasar.io
+        </A>
+      </Attribution>
     </FooterStyle>
   );
 };

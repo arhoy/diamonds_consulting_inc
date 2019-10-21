@@ -92,7 +92,7 @@ const Nav = () => {
           <FaCubeStyled /> <LogoSpan>Diamonds</LogoSpan>
         </Navlink>
         <LogoBottom>
-          <LogoPhone>587-723-082</LogoPhone>
+          <LogoPhone>587-723-0825</LogoPhone>
           <FaPhone />
         </LogoBottom>
       </Logo>
