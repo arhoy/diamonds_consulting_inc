@@ -12,16 +12,36 @@ const StyledA = styled(A)`
   }
 `;
 
+const StyledSpan = styled.span`
+  border-bottom: 1px solid ${props => props.theme.colors.primaryTransparent};
+  color: ${props => props.theme.colors.primary};
+  margin: 0 0.5rem;
+  &:hover {
+    border-bottom: 1px solid ${props => props.theme.colors.primaryDark};
+  }
+`;
+
 const ListVertical = ({ items, margin }) => (
   <Ul>
     {items.map((item, i) => (
       <Li key={i} style={{ margin: `${margin}` }}>
         <Span> {item.title} </Span>
-        {item.urls.map(url => (
-          <StyledA rel="noopener noreferrer" href={url.url} target="_blank">
-            {url.urlTitle}
-          </StyledA>
-        ))}
+        {item.urls.map(url => {
+          if (url.noLink) {
+            return <StyledSpan>{url.urlTitle}</StyledSpan>;
+          } else {
+            return (
+              <StyledA
+                key={url.url}
+                rel="noopener noreferrer"
+                href={url.url}
+                target="_blank"
+              >
+                {url.urlTitle}
+              </StyledA>
+            );
+          }
+        })}
       </Li>
     ))}
   </Ul>

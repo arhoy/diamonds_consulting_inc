@@ -2,97 +2,42 @@
 
 export default [
   {
-    title: 'Code Editor: ',
+    title: 'Step 1: ',
     urls: [
       {
-        url: 'https://code.visualstudio.com/',
-        urlTitle: 'VS Code',
+        url: '',
+        urlTitle: 'Build your data foundation',
+        noLink: true,
       },
     ],
   },
   {
-    title: 'Hosting: ',
+    title: 'Step 2: ',
     urls: [
       {
-        url: 'https://www.netlify.com/',
-        urlTitle: 'Netlify',
-      },
-      {
-        url: 'https://www.heroku.com/',
-        urlTitle: 'Heroku',
-      },
-      {
-        url: 'https://www.ecowebhosting.co.uk/',
-        urlTitle: 'Eco Web Hostings',
+        url: '#',
+        urlTitle: 'Apply advanced analytics',
+        noLink: true,
       },
     ],
   },
   {
-    title: 'Front End: ',
+    title: 'Step 3',
     urls: [
       {
-        url: 'https://www.netlify.com/',
-        urlTitle: 'Gatsby',
-      },
-      {
-        url: 'https://www.heroku.com/',
-        urlTitle: 'React',
+        url: '#',
+        urlTitle: 'Improve business performance',
+        noLink: true,
       },
     ],
   },
   {
-    title: 'Back End: ',
+    title: 'Step 4',
     urls: [
       {
-        url: 'https://nodejs.org/en/',
-        urlTitle: 'Node',
-      },
-      {
-        url: 'https://expressjs.com/',
-        urlTitle: 'Express',
-      },
-      {
-        url: 'https://www.mongodb.com',
-        urlTitle: 'Mongo DB',
-      },
-    ],
-  },
-  {
-    title: 'CMS: ',
-    urls: [
-      {
-        url: 'https://www.contentful.com/',
-        urlTitle: 'Contentful',
-      },
-      {
-        url: 'https://mdxjs.com/getting-started/gatsby',
-        urlTitle: 'MDX',
-      },
-    ],
-  },
-  {
-    title: 'Back End Hosting: ',
-    urls: [
-      {
-        url: 'https://nodejs.org/en/',
-        urlTitle: 'Mlab',
-      },
-      {
-        url: 'https://www.mongodb.com/cloud/atlas',
-        urlTitle: 'Mongo DB Atlas',
-      },
-    ],
-  },
-  {
-    title: 'Other Familiar Platforms: ',
-    urls: [
-      {
-        url: 'https://wordpress.com/',
-        urlTitle: 'Wordpress',
-      },
-      {
-        url: 'https://www.shopify.ca/',
-        urlTitle: 'Shopify',
+        url: '#',
+        urlTitle: 'Explore innovation opportunities ',
+        noLink: true,
       },
     ],
   },

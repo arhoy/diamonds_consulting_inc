@@ -44,7 +44,7 @@ export default ({ data }) => {
       >
         <Banner
           title="DIAMONDS CONSULTING"
-          info="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto minima consectetur culpa ullam optio laboriosam officiis"
+          info="Helping companies with optimizing data sets, data intelligence and making better informed decisions using data analytics"
         />
       </StyledHero>
       <CustomSectionGrey>

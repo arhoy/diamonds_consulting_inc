@@ -16,19 +16,37 @@ const StyledA = styled(A)`
   }
 `;
 
+const StyledSpan = styled.span`
+  border-bottom: 1px solid ${props => props.theme.colors.primaryTransparent};
+  color: ${props => props.theme.colors.primary};
+  &:hover {
+    border-bottom: 1px solid ${props => props.theme.colors.primaryDark};
+  }
+`;
+
+// const linkClickEventHandler = () => {
+//   console.log('I was clicked!');
+// };
+
 const ListInline = ({ urls, fontSize }) =>
-  urls.map(url => (
-    <StyledInlineLi key={url.url}>
-      <StyledA
-        style={{ fontSize: `${fontSize}` }}
-        rel="noopener noreferrer"
-        href={url.url}
-        target="_blank"
-      >
-        {url.title}
-      </StyledA>
-    </StyledInlineLi>
-  ));
+  urls.map(url => {
+    return (
+      <StyledInlineLi key={url.url}>
+        {url.noLink ? (
+          <StyledSpan style={{ fontSize: fontSize }}>{url.title}</StyledSpan>
+        ) : (
+          <StyledA
+            style={{ fontSize: `${fontSize}` }}
+            rel="noopener noreferrer"
+            href={url.url}
+            target="_blank"
+          >
+            {url.title}
+          </StyledA>
+        )}
+      </StyledInlineLi>
+    );
+  });
 
 const ListVertical = ({ urls }, i) => (
   <Ul>

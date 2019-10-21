@@ -45,14 +45,13 @@ const about = () => {
             <Div>
               <H1>What is Diamonds Consulting</H1>
               <p>
-                Lorem ipsum <strong>Diamonds</strong> sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                We hope to be a <strong>leader</strong> in using data to help
+                other companies remodel their business toward growth, decision
+                making and strategic investments.
+              </p>
+              <p>
+                Our core values are company growth, customer satisfaction,
+                innovation and team building.
               </p>
             </Div>
           </Container800>
@@ -62,21 +61,26 @@ const about = () => {
             <Div>
               <H2>Our Mission</H2>
               <p>
-                Lorem ipsum <strong>Diamonds</strong> sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                At <strong>Diamonds</strong> we help companies optimize data
+                sets, use data intelligence to make better informed decisions
+                and create company growth through data Analytics.
               </p>
             </Div>
           </Container800>
         </SectionGrey>
 
         <Section>
+          <Container800>
+            <H2>Our Purpose</H2>
+            <p>
+              To be inspired by clients, working hard to help businesses with
+              data to reduce the bias in machine learning and this how we gone
+              to address then.
+            </p>
+          </Container800>
+        </Section>
+
+        <SectionGrey>
           <Container800>
             <Div>
               <H2>Porfolio</H2>
@@ -92,13 +96,13 @@ const about = () => {
               </p>
             </Div>
           </Container800>
-        </Section>
+        </SectionGrey>
 
         <SectionGrey>
           <Container800>
             <Div>
-              <H2>Current Tech Used</H2>
-              <p>List of web development tools</p>
+              <H2>How to use data and analytics?</H2>
+              <p>We use the following 4 step approach</p>
               <Margin2>
                 <ListWithDescription margin="1rem 0" items={currentlyUsing} />
               </Margin2>
