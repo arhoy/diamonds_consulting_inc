@@ -112,10 +112,12 @@ const about = () => {
               <H3> 1. Developers</H3>
               <p>
                 Developers are required to determine feature relevance prior to
-                training the model. For example, If we have gender in the
-                dataset how relevant is it in determining this entry belongs to
-                this category. Feature Relevance, Feature Extraction these are
-                normally done during the data preprocessing stage.
+                training the model. The primary role of a developer is to
+                develop a model or sort of design a model. For example, If we
+                have gender in the dataset how relevant is it in determining
+                this entry belongs to this category. Feature Relevance, Feature
+                Extraction these are normally done during the data preprocessing
+                stage.
               </p>
             </Div>
 
