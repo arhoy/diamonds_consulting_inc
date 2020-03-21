@@ -26,7 +26,6 @@ const TitleContainer = styled.div`
 `;
 
 const Blurb = styled.p`
-  text-indent: 3rem;
   opacity: 0.9;
 `;
 

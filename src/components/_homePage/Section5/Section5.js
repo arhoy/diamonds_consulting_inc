@@ -30,6 +30,10 @@ export const Section5 = () => {
           trends, patterns, outliers, correlations between variables; that would
           go unnoticed without use of visualizations; thus telling a story of
           the data.
+          <br /> <br />
+          Package our Master Data Management service with our data science,
+          modeling, business intelligence and machine learning services to make
+          your business foolproof data-wise.
         </Blurb>
       </Container>
     </CustomSection>
