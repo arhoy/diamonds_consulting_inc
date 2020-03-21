@@ -1,5 +1,7 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
+import Fade from 'react-reveal/Fade';
 import useLatestArticles from '../hooks/useLatestArticles';
 import Articles from '../components/articles/Articles';
 
@@ -54,9 +56,15 @@ export default ({ data }) => {
 
       <Section1 />
       <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
+      <Fade bottom>
+        <Section3 />
+      </Fade>
+      <Fade bottom>
+        <Section4 />
+      </Fade>
+      <Fade bottom>
+        <Section5 />
+      </Fade>
       <CustomSectionGrey>
         <Container800>
           <H2>Our Blog</H2>
