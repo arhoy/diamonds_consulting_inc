@@ -24,6 +24,7 @@ const theme = {
   pageWidth: {
     fixed: '800px',
     fixedHome: '900px',
+    homePageSectionContentWidth: '1050px',
   },
   screenSize: {
     mobileL: '600px',

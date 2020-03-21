@@ -16,7 +16,11 @@ import Banner from '../components/reusableStyles/banner/Banner';
 import { H2 } from '../components/reusableStyles/typography/Typography';
 import SimpleNetlifyForm from '../components/forms/SimpleNetlifyForm';
 import Hero from '../components/heros/Hero';
-
+import { Section1 } from '../components/_homePage/Section1/Section1';
+import { Section2 } from '../components/_homePage/Section2/Section2';
+import { Section3 } from '../components/_homePage/Section3/Section3';
+import { Section4 } from '../components/_homePage/Section4/Section4';
+import { Section5 } from '../components/_homePage/Section5/Section5';
 const CustomSectionGrey = styled(SectionGrey)`
   padding-top: 4rem;
 `;
@@ -47,12 +51,15 @@ export default ({ data }) => {
           info="Helping companies with optimizing data sets, data intelligence and making better informed decisions using data analytics"
         />
       </StyledHero>
+
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
       <CustomSectionGrey>
         <Container800>
-          {/* <H2>
-            Lastest Articles{' '}
-            <NavlinkButton2 to="/articles"> View All</NavlinkButton2>
-          </H2> */}
+          <H2>Our Blog</H2>
           <Articles articles={useLatestArticles()} />
         </Container800>
       </CustomSectionGrey>

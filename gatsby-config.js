@@ -2,7 +2,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const URL = 'https://aquasar.io';
+const URL = 'https://diamondsconsultingltd.com/';
 
 module.exports = {
   siteMetadata: {
@@ -56,24 +56,6 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `gatsbyjs`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-stripe`,
-    },
-    {
-      resolve: `gatsby-source-stripe`,
-      options: {
-        objects: [
-          'Balance',
-          'BalanceTransaction',
-          'Product',
-          'ApplicationFee',
-          'Sku',
-          'Subscription',
-        ],
-        secretKey: process.env.STRIPE_SECRET_KEY,
-        downloadFiles: true,
       },
     },
     `gatsby-plugin-twitter`,
