@@ -8,14 +8,11 @@ import {
 export default [
   {
     icon: <FaFacebookSquare />,
-    url: 'https://www.facebook.com/CraveJs-1602659229869334',
-  },
-  {
-    icon: <FaGithubSquare />,
-    url: 'https://github.com/arhoy',
+    url:
+      'https://www.facebook.com/Diamond-Consulting-Ltd-103433177937892/?modal=admin_todo_tour',
   },
   {
     icon: <FaTwitterSquare />,
-    url: 'https://twitter.com/_aquasar',
+    url: 'https://www.instagram.com/diamondsconsultingltd/',
   },
 ];
