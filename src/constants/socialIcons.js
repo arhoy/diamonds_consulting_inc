@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  FaTwitterSquare,
-  FaFacebookSquare,
-  FaGithubSquare,
-} from 'react-icons/fa';
+import { FaInstagram, FaFacebookSquare } from 'react-icons/fa';
 
 export default [
   {
@@ -12,7 +8,7 @@ export default [
       'https://www.facebook.com/Diamond-Consulting-Ltd-103433177937892/?modal=admin_todo_tour',
   },
   {
-    icon: <FaTwitterSquare />,
+    icon: <FaInstagram />,
     url: 'https://www.instagram.com/diamondsconsultingltd/',
   },
 ];
