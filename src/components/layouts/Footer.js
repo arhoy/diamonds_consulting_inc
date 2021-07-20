@@ -39,7 +39,7 @@ const Div = styled.div`
 `;
 
 const A = styled.a`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: ${props => props.theme.colors.black};
   text-decoration: none;
 `;
@@ -76,7 +76,7 @@ const Footer = () => {
       <FooterBlurb>Diamonds Consulting Inc {d} &copy; </FooterBlurb>
       <Attribution>
         Gatsby Web Development By{' '}
-        <A target="_blank" rel="noopener noreferrer" href="https://theorderguys.com/">
+        <A target="_blank" rel="dofollow" href="https://theorderguys.com/">
           The Order Guys
         </A>
       </Attribution>
