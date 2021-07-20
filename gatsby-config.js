@@ -22,15 +22,9 @@ module.exports = {
       resolve: `gatsby-plugin-emotion`,
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Poppins`,
-          },
-          {
-            family: `Roboto`,
-          },
+        fonts: ['Poppins','Roboto'
         ],
       },
     },
