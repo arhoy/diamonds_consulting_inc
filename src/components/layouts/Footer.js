@@ -42,6 +42,7 @@ const A = styled.a`
   font-size: 1.4rem;
   color: ${props => props.theme.colors.black};
   text-decoration: none;
+  margin: 0 4px;
 `;
 const Attribution = styled.p`
   font-size: 1.2rem;
@@ -75,10 +76,10 @@ const Footer = () => {
       tel: 587-723-0825
       <FooterBlurb>Diamonds Consulting Inc {d} &copy; </FooterBlurb>
       <Attribution>
-        Gatsby Web Development By{' '}
         <A target="_blank" rel="dofollow" href="https://theorderguys.com/">
-          The Order Guys
+          Web Development And SEO
         </A>
+         By The Order Guys
       </Attribution>
     </FooterStyle>
   );
