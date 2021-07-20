@@ -75,9 +75,9 @@ const Footer = () => {
       tel: 587-723-0825
       <FooterBlurb>Diamonds Consulting Inc {d} &copy; </FooterBlurb>
       <Attribution>
-        Created by{' '}
-        <A target="_blank" rel="noopener noreferrer" href="https://aquasar.io/">
-          Aquasar.io
+        Gatsby Web Development By{' '}
+        <A target="_blank" rel="noopener noreferrer" href="https://theorderguys.com/">
+          The Order Guys
         </A>
       </Attribution>
     </FooterStyle>
